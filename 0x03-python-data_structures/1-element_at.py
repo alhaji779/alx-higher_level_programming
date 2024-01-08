@@ -7,4 +7,4 @@ def element_at(my_list, idx):
      elif idx > l:
          return None
      else:
-         print("Element at index {} is {}".format(idx, myList[idx]))
+         print("Element at index {:d} is {}".format(idx, myList[idx]))
