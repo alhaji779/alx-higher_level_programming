@@ -5,19 +5,19 @@ def roman_to_int(roman_string):
         if 'IV' in roman_string:
             total_int += 4
             roman_string = roman_string.replace('IV', '')
-        elif 'IX' in roman_string:
+        if 'IX' in roman_string:
             total_int += 9
             roman_string = roman_string.replace('IX', '')
-        elif 'XL' in roman_string:
+        if 'XL' in roman_string:
             total_int += 40
             roman_string = roman_string.replace('XL', '')
-        elif 'XC' in roman_string:
+        if 'XC' in roman_string:
             total_int += 90
             roman_string = roman_string.replace('XC', '')
-        elif "CD" in roman_string:
+        if "CD" in roman_string:
             total_int += 400
             roman_string = roman_string.replace("CD", "")
-        elif "CM" in roman_string:
+        if "CM" in roman_string:
             total_int += 900
             roman_string = roman_string.replace("CM", "")
         for i in roman_string:
@@ -37,4 +37,4 @@ def roman_to_int(roman_string):
                 total_int += 1000
             else:
                 total_int += 0
-    return total_int
+    return (total_int)
