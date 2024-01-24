@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+""" Square Class definition """
+
 class Square:
-    pass
     """
     creates a square class object
 
     """
+    pass
