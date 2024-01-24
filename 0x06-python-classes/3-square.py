@@ -28,4 +28,4 @@ class Square:
         """ Function to calculate area of square.
 
         """
-        return self.__size ** 2
+        return (self.__size ** 2)
