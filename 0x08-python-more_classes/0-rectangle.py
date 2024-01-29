@@ -2,5 +2,7 @@
 """ A module to build Rectangles """
 
 class Rectangle:
-    """ This is a Rectangle building class"""
+    """ This is a Rectangle building class
+    """
+    
     pass
