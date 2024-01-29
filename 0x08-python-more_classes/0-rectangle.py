@@ -6,5 +6,5 @@
 class Rectangle:
     """ This is a Rectangle building class
     """
-    
-    pass
+    def __init__(self):
+        pass
