@@ -8,11 +8,11 @@ save_file = __import__.('5-save_to_json_file').save_to_json_file
 from sys import argv
 
 try:
-    lst = load_file(add_item.json)
+    lst = load_file('add_item.json')
 except:
     lst = []
 
 for i in argv[1:]:
     lst.append(i)
 
-save_file(lst, add_item.json)
+save_file(lst, 'add_item.json')
