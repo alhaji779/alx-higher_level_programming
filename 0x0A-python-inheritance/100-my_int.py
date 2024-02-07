@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Custom class to reverse == and != """
 
+
 class MyInt(int):
     """ Custom myint class """
     def __init__(self, num):
