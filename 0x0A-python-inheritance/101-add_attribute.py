@@ -2,7 +2,6 @@
 """adds new attribute if possible"""
 
 
-
 def add_attribute(obj, attr, value):
     """adds new attribute
     """
