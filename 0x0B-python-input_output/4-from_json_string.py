@@ -6,4 +6,4 @@ def from_json_string(my_str):
     """ function to convert json str to python object """
     import json
 
-    return json.load(my_str)
+    return json.loads(my_str)
