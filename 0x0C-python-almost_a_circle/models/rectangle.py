@@ -83,8 +83,14 @@ class Rectangle(Base):
 
     def display(self):
         """ function to display class instance """
+        if self.__y > 0:
+            for i in range(self.__y):
+                print()
+            self.__y = 0
         for i in range(self.__height):
             for j in range(self.__width):
+                if self.__y == j:
+                    print(" " * self.__x, end="")
                 print("#", end='')
             print()
 
@@ -100,10 +106,24 @@ class Rectangle(Base):
             self.__width = args[1] if len(args) >= 2 else self.__width
             self.__height = args[2] if len(args) >= 3 else self.__height
             self.__x = args[3] if len(args) >= 4 else self.__x
-            self.__y = args[4] if len(args) >= 5 else self.__
+            self.__y = args[4] if len(args) >= 5 else self.__y
         if kwargs:
             self.id = kwargs.get('id', self.id)
             self.__width = kwargs.get('width', self.__width)
             self.__height = kwargs.get('height', self.__height)
             self.__x = kwargs.get('x', self.__x)
             self.__y = kwargs.get('y', self.__y)
+
+    def to_dictionary(self):
+        """Returns the dictionary representation of a Rectangle.
+
+        Returns:
+            dict: rectangle.
+        """
+        dict = {}
+        dict["id"] = self.id
+        dict["width"] = self.width
+        dict["height"] = self.height
+        dict["x"] = self.x
+        dict["y"] = self.y
+        return (dict)
