@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-""" code to create a new class(table) via orm 
+""" code to create a new class(table) via orm
 """
 from sys import argv
 from sqlalchemy import Column, String, Integer, ForeignKey
 from model_state import Base, State
+
 
 class City(Base):
     """ City table

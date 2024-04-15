@@ -10,7 +10,7 @@ if __name__ == "__main__":
                          passwd=argv[2], db=argv[3])
     c = db.cursor()
     c.execute("Select a.name from cities a join states b on b.id \
-              = a.state_id where b.name = %s",(argv[4],))
+              = a.state_id where b.name = %s", (argv[4],))
     cc = c.fetchall()
     print(", ".join(row[0] for row in cc))
     c.close()
