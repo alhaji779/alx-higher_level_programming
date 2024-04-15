@@ -12,7 +12,6 @@ if __name__ == "__main__":
     c.execute("SELECT a.id, a.name,b.name from cities a join states \
               b on b.id = a.state_id order by a.id")
     cc = c.fetchall()
-    
     for row in cc:
         print(row)
 
