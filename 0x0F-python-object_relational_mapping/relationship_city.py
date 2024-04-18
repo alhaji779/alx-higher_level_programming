@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" update of model_city.py file 
+""" update of model_city.py file
 """
 from sys import argv
 from sqlalchemy import Column, Integer, String, ForeignKey

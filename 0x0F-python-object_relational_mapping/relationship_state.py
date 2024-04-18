@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" update of the model_state.py file 
+""" update of the model_state.py file
 """
 from sys import argv
 from sqlalchemy import Column, Integer, String, ForeignKey
